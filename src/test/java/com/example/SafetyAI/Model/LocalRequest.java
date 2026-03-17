@@ -1,16 +1,12 @@
 package com.example.SafetyAI.Model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class LocalRequest {
-    private double lan;
+    private double lng;
     private double lat;
-
 }
