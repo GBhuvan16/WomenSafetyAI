@@ -5,6 +5,8 @@ import com.example.SafetyAI.Service.ChatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Map;
+
 @RestController
 @CrossOrigin(origins = "*")
 public class ChatController {
@@ -15,5 +17,9 @@ public class ChatController {
     @PostMapping("/chat")
     public String chat(@RequestBody ChatRequest request) {
         return service.getReply(request.getMessage());
+    }
+    @PostMapping("/location")
+    public void receiveLocation(@RequestBody Map<String, String> data) {
+        System.out.println("Live Location: " + data);
     }
 }
