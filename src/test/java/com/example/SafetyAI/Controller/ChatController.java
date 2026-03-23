@@ -13,7 +13,10 @@ public class ChatController {
 
     @Autowired
     private ChatService service;
-
+    @GetMapping("/test")
+    public String test() {
+        return "Backend working!";
+    }
     @PostMapping("/chat")
     public String chat(@RequestBody ChatRequest request) {
         return service.getReply(request.getMessage());
