@@ -1,4 +1,4 @@
-package com.example.SafetyAI.Model;
+package com.example.SafetyAI.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

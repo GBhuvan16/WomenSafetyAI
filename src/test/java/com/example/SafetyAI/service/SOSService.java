@@ -1,4 +1,4 @@
-package com.example.SafetyAI.Service;
+package com.example.SafetyAI.service;
 
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,7 @@
-package com.example.SafetyAI.Controller;
+package com.example.SafetyAI.controller;
 
-import com.example.SafetyAI.Model.ChatRequest;
-import com.example.SafetyAI.Service.ChatService;
+import com.example.SafetyAI.model.ChatRequest;
+import com.example.SafetyAI.service.ChatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,6 +1,6 @@
-package com.example.SafetyAI.Controller;
+package com.example.SafetyAI.controller;
 
-import com.example.SafetyAI.Service.SOSService;
+import com.example.SafetyAI.service.SOSService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.Map;
