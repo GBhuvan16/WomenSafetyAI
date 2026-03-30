@@ -6,13 +6,15 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-@SpringBootApplication
+// ✅ FIX: Added scanBasePackages
+@SpringBootApplication(scanBasePackages = "com.example.SafetyAI")
 public class ApplicationSafetyAI {
 
     public static void main(String[] args) {
         SpringApplication.run(ApplicationSafetyAI.class, args);
     }
 
+    // ✅ CORS config (keep this)
     @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
