@@ -11,6 +11,9 @@ import java.util.Map;
 @RequestMapping("/")
 @CrossOrigin(origins = "*")
 public class ChatController {
+    public ChatController() {
+        System.out.println("🔥 ChatController Loaded");
+    }
 
     @Autowired
     private ChatService service;
